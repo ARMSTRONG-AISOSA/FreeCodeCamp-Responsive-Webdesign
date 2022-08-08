@@ -1,0 +1,129 @@
+.main {
+  background-image: url(https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-position: center; */
+  /* Centers the image */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  overflow-y: scroll;
+  /* font-size: 3vw; */
+  /* Responsive text */
+}
+
+.main-content{
+  background-color: rgba(27, 27, 50, 0.8);
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 0 auto;
+  /* The top/bottom margin is 0, and the left/right margin is auto, Where auto means that the left and right margin are automatically set by the browser based on the container, to make element centered. */
+  margin-top: 80px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  position: relative;
+  /* An element with position: relative; is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. */
+  z-index: 2;
+  box-shadow: 0px 0px 20px 5px purple;
+}
+
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+}
+
+#survey-form {
+}
+
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label,
+#comment-label,
+#text-area-label,
+#legend-label,
+#self-description-label {
+  margin-bottom: 10px;
+  display: inline-block;
+  /* Compared to display: inline , the major difference is that display: inline-block allows to set a width and height on the element. Also, with display: inline-block , the top and bottom margins/paddings are respected, but with display: inline they are not. */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#text-area-label{
+  padding-top: 20px;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#comment,
+#self-description {
+  display: block;
+  width: 95%;
+  height: 25px;
+  padding: 5px 10px;
+  /* color: #000000; */
+  background-color: hwb(0 100% 0% / 0.116);
+  border: 1px solid #696666;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #e0d6d6;
+}
+
+#p-t{
+  font-size: px;
+}
+
+#number {
+  width: 20%;
+}
+
+#dropdown{
+  height: 35px;
+}
+
+
+
+#submit{
+  display: block;
+  border-radius: 10px;
+  width: 20%;
+  padding: 0.5rem;
+  border: solid 1px rgb(80, 78, 78);
+  background: rgba(27, 27, 50, 0.9);
+  color: #f0f0f0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all;
+  transition-duration: 1.5s;
+}
+
+#submit:hover {
+  display: block;
+  width: 20%;
+  padding: 0.5rem;
+  background: #330128;
+  border-radius: 25px;
+  cursor: pointer;
+  border: solid 1px rgb(255, 255, 255);
+  color: #ffffff;
+  font-weight: bold;
+  transition: all;
+  transition-duration: 1.5s;
+  /* font-size: 20px; */
+}

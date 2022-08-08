@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+
+      <div class="main-content">
+        <div>
+          <form id="survey-form" action="">
+            <label for="name" id="name-label">Name</label>
+            <input
+              id="name"
+              type="text"
+              required
+              placeholder="Enter your name"
+            />
+
+            <label for="email" id="email-label">Email</label>
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="Enter your email"
+            />
+
+            <label for="number" id="number-label">Age</label>
+            <input
+              type="number"
+              id="number"
+              min="1"
+              max="100"
+              placeholder="Select your age"
+            />
+
+
+            <label for="dropdown" id="dropdown-label" >Select your current role</label>
+            <select name="" id="dropdown" >
+              <option value="Intern">Intern</option>
+              <option value="Full-time-Job">Full-time-Job</option>
+              <option value="Part-time">Part-time</option>
+              <option value="Freelancer">Freelancer</option>
+              <option value="Independent-Contractor">Independent-Contractor</option>
+            </select>
+
+
+
+            <!-- Some Notes -->
+            <!-- The action attribute specifies where to send the form-data when a form is submitted. -->
+            <!-- The <fieldset> tag is used to group related elements in a form. The <fieldset> tag draws a box around the related elements(controls, labels etc.). -->
+            <!-- The <legend> tag defines a caption for the <fieldset> element. -->
+            <fieldset>
+              <legend id="legend-label">Would you recommend my form to a friend?</legend>
+              <input type="radio" name="action" checked value="definitely" id="definitely">
+              <label for="definitely" >Definately</label><br>
+              <input type="radio" name="action" value="maybe" id="maybe">
+              <label for="maybe" >Maybe</label><br>
+              <input type="radio" name="action" value="not-sure" id="not-sure">
+              <label for="not-sure" >Not sure</label><br>
+            </fieldset><br>
+
+            <h3>Select below your favourite forms of video entertainment</h3>
+
+            <input type="checkbox" id="anime" name="anime" value="anime">
+            <label for="anime">Anime</label><br>
+
+            <input type="checkbox" id="action-movie" name="action-movie" value="action-movie">
+            <label for="action-movie">Action Movies</label><br>
+
+            <input type="checkbox" id="cartoon" name="cartoon" value="cartoon">
+            <label for="cartoon">Cartoons</label><br>
+
+            <input type="checkbox" id="reality-tv" name="reality-tv" value="reality-tv">
+            <label for="reality-tv">Reality TV</label><br>
+
+            <input type="checkbox" id="series" name="series" value="series">
+            <label for="series">Series</label><br>
+
+            <input type="checkbox" id="soap-operas" name="soap-operas" value="soap-operas">
+            <label for="soap-operas">Soap Operas</label><br><br><br>
+
+            <label for="self-description" id="self-description-label">Write a short description about yourself</label>
+            <textarea name="self-description" id="self-description" cols="30" rows="4" placeholder="Short self description..."></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
