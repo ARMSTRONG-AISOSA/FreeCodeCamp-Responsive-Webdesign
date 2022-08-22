@@ -1,0 +1,347 @@
+/* ===============  Document  =============== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+/* This removes the scroll bar in Chrome, Safari, Opera */
+
+body {
+  font-family: "lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+    Sans-Serif;
+  background-color: rgb(3, 66, 75);
+  /* color: rgb(95, 155, 207); */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+  /* color: #ffffff; */
+}
+
+p {
+  color: #aca5a5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Make changes to see how the items responds */
+
+/* ===============  Navbar  =============== */
+
+.responsive {
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+  /* If you want to restrict a responsive image to a maximum size, use the max-width property, with a pixel value of your choice. The width takes its own "width size" within the max-width. */
+}
+
+.nav-content .logo img {
+  /* width: 100%; */
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+#navbar {
+  width: 100%;
+  background-color: #bd1f34;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid #000;
+  z-index: 5;
+}
+
+.nav-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.nav-content .logo {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  /* border: solid red 1px; */
+  /* Use the border to see the area this feature affects. */
+}
+
+.nav-content ul {
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+  padding: 0;
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-content ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-content ul li:last-child {
+  margin-right: 1px;
+  /* This adjusts the margin to the right (side) of the last list item.  */
+}
+
+.nav-content ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all;
+  transition-duration: 1s;
+}
+
+.nav-content ul li a:hover {
+  color: #000000;
+  /* font-family: "Raleway"; */
+  transition: all;
+  transition-duration: 1s;
+}
+
+/* ===============  welcome-section  =============== */
+
+/* .space {
+  padding: 100px;
+} */
+
+#welcome-section {
+  width: 100%;
+  min-height: 90vh;
+  /* min-height brings the text below the fixed navbar giving the welcome section 90% of the device display screen height*/
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  transition: all;
+  transition-duration: 1s;
+}
+
+#welcome-section h1 {
+  text-align: center;
+}
+
+#welcome-section h1:hover {
+  transform: scale(1.1);
+  transition: all;
+  transition-duration: 1s;
+}
+
+/* ===============  Projects  =============== */
+
+#projects {
+  background-color: rgb(6, 51, 110);
+  padding: 20px 0;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+}
+
+#projects .project-tile {
+  padding-bottom: 50px;
+  padding-top: 73px;
+}
+
+#projects .sub_heading_2 {
+  color: #ffffff;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  text-align: center;
+  transition: all;
+  transition-duration: 1s;
+}
+
+#projects .sub_heading_2:hover {
+  transform: scale(1.1);
+  transition: all;
+  transition-duration: 1s;
+}
+
+#projects .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  margin-bottom: 25px;
+}
+
+#projects .cards .card{
+    display: block;
+    width: 100%;
+    position: relative;
+    transition: all 1.5s ease-in-out;
+}
+
+#projects .card:hover{
+    transition: all 1.5s ease-in-out;
+    transform: rotate3d(0, 1, .2, 1turn);
+    position: relative;
+    z-index: 10;
+}
+
+#projects .cards .card img{
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+  border-radius: 4px;
+}
+
+#projects .cards .card figcaption{
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  font-size: 24px;
+  bottom: 0;
+  margin: o auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* ===============  Contact  =============== */
+
+#contact{
+  color: #fff;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  text-align: center;
+  transition: all;
+  transition-duration: 1s;
+}
+
+#contact li i:hover{
+  transform: scale(1.5) rotate(360deg);
+  transition: all;
+  transition-duration: 0.8s;
+}
+
+#contact h1{
+  margin-bottom: 0;
+}
+
+#contact p{
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding-top: 0;
+}
+
+
+#contact ul{
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+#contact ul li{
+  display: inline-block;
+  margin: 10px 30px;
+  transition: all;
+  transition-duration: 0.4s;
+}
+
+
+
+#contact ul li a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#contact a i{
+  text-decoration: none;
+  color: aliceblue;
+  margin: 10px 10px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+
+
+/* ===============  Footer  =============== */
+
+footer{
+  width: 100%;
+  background-color: rgb(2, 44, 51);
+  border-top: 2px solid #be3144;
+  color: rgb(221, 221, 221);
+}
+
+footer .footer-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+footer div h3{
+  margin: 2px;
+  /* Separates the div row via text.*/
+}
+
+.h3-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  /* color: #ffffff; */
+}
+
+
+
+
+/*============= Media query ===============*/
+
+@media(min-width: 400px){
+  
+}
+
+
+@media(min-width: 600px){
+  .nav-content ul{
+    font-size: 26px;
+  }
+
+  .nav-content ul li a{
+    padding: 0px;
+  }
+
+  #projects .cards{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+@media(min-width: 900px){
+  .nav-content ul{
+    font-size: 30px;
+  }
+
+  #projects .cards{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
+.container {
+}
+
+.sub_heading_2 {
+}
+
+.contact_heading {
+}
+
+.profile-link {
+}
